@@ -1,15 +1,3 @@
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TSM5N1J350"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-TSM5N1J350');
-</script>
-
-
 import streamlit as st
 from PIL import Image
 from pathlib import Path
@@ -26,6 +14,17 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-
+google_analytics = """ 
+            <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TSM5N1J350"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-TSM5N1J350');
+        </script>
+            """
+st.markdown(google_analytics, unsafe_allow_html=True)
 
 st.write("Hello World")
