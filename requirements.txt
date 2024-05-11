@@ -1,1 +1,6 @@
 beautifulsoup4
+shutil
+logging
+pathlib
+pillow
+
