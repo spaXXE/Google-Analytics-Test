@@ -25,6 +25,5 @@ google_analytics = """
           gtag('config', 'G-TSM5N1J350');
         </script>
             """
-st.markdown(google_analytics, unsafe_allow_html=True)
-
+st.components.v1.html(google_analytics)
 st.write("Hello World")
